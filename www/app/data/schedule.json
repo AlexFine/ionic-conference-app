@@ -7,8 +7,8 @@
         "talks": [
           {
             "name": "Breakfast",
-            "timestart": "05/17/2016 8:00",
-            "timeend": "05/17/2016 9:00",
+            "timestart": "",
+            "timeend": "",
             "location": "Main hallway",
             "category": "food"
           }
