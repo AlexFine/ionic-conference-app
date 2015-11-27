@@ -45,10 +45,6 @@ export class SpeakerListPage {
     this.speakersNames = speakers;
   }
 
-  openSession(session) {
-    this.nav.push(SessionDetailPage, session);
-  }
-
   openSpeakerDetail(speakerName) {
     this.nav.push(SpeakerDetailPage, speakerName);
   }
@@ -56,6 +52,11 @@ export class SpeakerListPage {
   openSpeakerTwitter(speaker) {
     window.open(speaker.twitter);
   }
+
+  openSession(session) {
+  this.nav.push(SessionDetailPage, session);
+}
+
 
   openShareSpeaker(speaker) {
     this.actionSheet.open({

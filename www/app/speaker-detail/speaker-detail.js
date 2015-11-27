@@ -25,4 +25,20 @@ export class SpeakerDetailPage {
   openSession(session) {
     this.nav.push(SessionDetailPage, session);
   }
+
+  $scope.viewer = pdf.Instance("viewer");
+
+    $scope.nextPage = function() {
+        $scope.viewer.nextPage();
+    };
+
+    $scope.prevPage = function() {
+        $scope.viewer.prevPage();
+    };
+
+    $scope.pageLoaded = function(curPage, totalPages) {
+        $scope.currentPage = curPage;
+        $scope.totalPages = totalPages;
+    };
+    
 }

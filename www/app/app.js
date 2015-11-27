@@ -3,6 +3,7 @@ import {DataService} from './service/data';
 import {TabsPage} from './tabs/tabs';
 import {LoginPage} from './login/login';
 import {SignupPage} from './signup/signup';
+import {SchedulePage} from './schedule/schedule';
 import './app.scss';
 
 @App({

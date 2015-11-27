@@ -18,4 +18,10 @@
       <p>{{session.description}}</p>
     </div>
   </div>
+  <button ng-click="prevPage()">&lt; Hello</button>
+<button ng-click="nextPage()">&gt; Hi</button>
+<br>
+<span>{{currentPage}}/{{totalPages}}</span>
+<br>
+<pdfviewer src="img/PDF%20Guide%20v2.pdf" on-page-load='pageLoaded(page,total)' id="viewer"></pdfviewer>
 </ion-content>
