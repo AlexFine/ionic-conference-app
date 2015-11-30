@@ -3,6 +3,9 @@ import {DataService} from './service/data';
 import {TabsPage} from './tabs/tabs';
 import {LoginPage} from './login/login';
 import {SignupPage} from './signup/signup';
+import {SchedulePage} from './schedule/schedule';
+import {AboutPage} from './about/about';
+import {SpeakerListPage} from './speaker-list/speaker-list';
 import './app.scss';
 
 @App({
@@ -25,13 +28,13 @@ class ConferenceApp {
     dataService.retrieveData();
 
     // We plan to add auth to only show the login page if not logged in
-    this.root = LoginPage;
+    this.root = SchedulePage;
     this.isMD = config.get('mode') == 'md' ? '' : null;
 
     this.pages = [
-      { title: 'Login', component: LoginPage, icon: 'log-in' },
-      { title: 'Signup', component: SignupPage, icon: 'person-add' },
-      { title: 'Logout', component: LoginPage, icon: 'log-out' },
+      { title: 'Learn', component: SchedulePage, icon: 'log-in' },
+      { title: 'Contact', component: SpeakerListPage, icon: 'person-add' },
+      { title: 'About', component: AboutPage, icon: 'log-out' },
     ];
   }
 

@@ -12,7 +12,7 @@ export class SchedulePage {
   constructor(nav: NavController, dataService: DataService, modal: Modal) {
     this.nav = nav;
     this.modal = modal;
-    
+
     this.schedule = dataService.getSchedule();
     this.sessionsForTheDay = this.schedule[0].sessions;
     this.scheduleShowing = 'all';
